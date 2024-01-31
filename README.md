@@ -1,2 +1,0 @@
-# Hashtag Cardápio Digital
-Test
