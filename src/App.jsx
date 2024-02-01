@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './css/style.css';
 import hashtauranteImg from './assets/hashtaurante.webp';
 import Navegacao from './navegacao';
 import ItemCardapio from './ItemCardapio';

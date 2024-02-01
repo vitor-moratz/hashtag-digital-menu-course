@@ -1,0 +1,134 @@
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+}
+
+.navegacao {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+
+  & > input {
+    display: none;
+  }
+
+  & > label {
+    flex: 1;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.8rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #2980b9;
+    }
+  }
+}
+
+.botao-navegacao {
+  flex: 1;
+  background-color: #302f2f;
+  color: #fff;
+  border-radius: 11px;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #000000;
+  }
+}
+
+input:checked + label {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container-item-cardapio {
+  display: flex;
+  flex-direction: column;
+  max-width: 35rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  & > img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  & > div {
+    padding: 1.5rem;
+    background-color: #fff;
+
+    & > h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    & > p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+
+    & > span {
+      display: block;
+      font-size: 1.2rem;
+      color: #e74c3c;
+      font-weight: 600;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.capa {
+  max-height: 15rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.479);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container-item-cardapio {
+    max-width: 100%;
+  }
+}
